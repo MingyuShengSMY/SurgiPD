@@ -1,0 +1,87 @@
+method:
+  name: ATGRL
+  backbone: ~
+  on_policy: false
+  vision_input_mark: true
+  frame_k: 3
+  img_size: 256
+  mid_dim: 1024
+  data_aug: false
+  rgb_pos: false
+
+  args:
+    initial_epsilon: 1.0
+    final_epsilon: 0.1
+    epsilon_decay_rate: 0.9
+    alpha: 0.2
+    dist_lf: t_o  # train the teacher
+    sac_weights_path: ./saved_model/ATGRL/NeedlePick/best_sac_weights_only
+
+game:
+  name: NeedlePick
+
+
+train:
+  n_iter: 500000
+  log_per_iter: 1000
+
+  batch_size: 64
+
+  memory_buffer_size: 500000
+
+  memory_push_per_rollout: 1
+
+  model_update_k_epoch: 1
+
+  model_update_k_iter: 1
+
+  start_rollout_size: 1000
+
+  start_expert_rollout: true
+
+  load_rollout_memory: false
+
+
+opts:
+  opt_actor:
+    name: "Adam"
+    lr: 0.0001
+    beta1: 0.0
+    beta2: 0.999
+
+  opt_critic:
+    name: "Adam"
+    lr: 0.0001
+    beta1: 0.9
+    beta2: 0.999
+
+  opt_other:
+    name: "Adam"
+    lr: 0.0001
+    beta1: 0.9
+    beta2: 0.999
+
+dirs:
+  model_load_dir: saved_model
+  model_save_dir: saved_model
+  memory_dir: saved_memory
+  vis_dir: vis
+  log_dir: log
+  rollout_memory_dir: rollout_memory
+  conn_cache_dir: conn_cache
+
+modal_corrupt: false
+
+GUI_mark: true
+
+random_seed: 2026
+
+gpu: true
+
+num_workers: 16
+
+mp_num: 1
+
+
+
+

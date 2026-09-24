@@ -1,0 +1,86 @@
+method:
+  name: __method_name__
+  backbone: __backbone__
+  on_policy: __on_policy__
+  vision_input_mark: __vision_input_mark__
+  frame_k: __frame_k__
+  img_size: __img_size__
+  mid_dim: __mid_dim__
+  data_aug: __data_aug__
+  rgb_pos: __rgb_pos__
+
+  args:
+    initial_epsilon: __initial_epsilon__
+    final_epsilon: __final_epsilon__
+    epsilon_decay_rate: __epsilon_decay_rate__
+    alpha: 0.2
+    __args__
+
+game:
+  name: __game_name__
+
+
+train:
+  n_iter: __n_iter__
+  log_per_iter: __log_per_iter__
+
+  batch_size: __batch_size__
+
+  memory_buffer_size: __memory_buffer_size__
+
+  memory_push_per_rollout: 1
+
+  model_update_k_epoch: 1
+
+  model_update_k_iter: 1
+
+  start_rollout_size: __start_rollout_size__
+
+  start_expert_rollout: true
+
+  load_rollout_memory: __load_rollout_memory__
+
+
+opts:
+  opt_actor:
+    name: "Adam"
+    lr: __lr__
+    beta1: 0.9
+    beta2: 0.999
+
+  opt_critic:
+    name: "Adam"
+    lr: __lr__
+    beta1: 0.9
+    beta2: 0.999
+
+  opt_other:
+    name: "Adam"
+    lr: __lr__
+    beta1: 0.9
+    beta2: 0.999
+
+dirs:
+  model_load_dir: saved_model
+  model_save_dir: saved_model
+  memory_dir: saved_memory
+  vis_dir: vis
+  log_dir: log
+  rollout_memory_dir: rollout_memory
+  conn_cache_dir: conn_cache
+
+modal_corrupt: __modal_corrupt__
+
+GUI_mark: false
+
+random_seed: __random_seed__
+
+gpu: true
+
+num_workers: __num_workers__
+
+mp_num: 1
+
+
+
+
