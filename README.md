@@ -13,7 +13,7 @@ TODO: [TODO](http://)
 Arxiv: [https://arxiv.org/abs/2511.05059](https://arxiv.org/abs/2511.05059)
 
 ## 🖼️Concept Figure
-![](assest/method.png)
+![](assets/method.png)
 
 
 ## 💻Setup
