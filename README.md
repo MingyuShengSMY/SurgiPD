@@ -14,7 +14,7 @@
 ## 📄Paper Link
 TODO: [TODO](http://)
 
-Arxiv: [https://arxiv.org/abs/2511.05059](https://arxiv.org/abs/2511.05059)
+Arxiv: [TODO](http://)
 
 ## 🖼️Concept Figure
 ![](assets/method.png)
