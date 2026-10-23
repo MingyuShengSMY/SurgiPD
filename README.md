@@ -14,7 +14,7 @@
 ## 📄Paper Link
 TODO: [TODO](http://)
 
-Arxiv: [TODO](http://)
+Arxiv: [TODO](https://arxiv.org/abs/2610.31010)
 
 ## 🖼️Concept Figure
 ![](assets/method.png)
@@ -66,7 +66,15 @@ TODO
 arXiv:
 
 ```
-TODO
+@misc{sheng2026revisitingdistributionmatchingstatetovision,
+      title={Revisiting Distribution Matching for State-to-Vision Policy Distillation in Laparoscopic Robotic Manipulation}, 
+      author={Mingyu Sheng and Jianan Fan and Dongnan Liu and Guoyan Zheng and Ron Kikinis and Weidong Cai},
+      year={2026},
+      eprint={2610.31010},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO},
+      url={https://arxiv.org/abs/2610.31010}, 
+}
 ```
 
 
