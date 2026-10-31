@@ -5,7 +5,7 @@ Anonymous
 ## 📄Paper Link
 TODO: [TODO](http://)
 
-Arxiv: [TODO](https://arxiv.org/abs/2610.31010)
+Arxiv: [https://arxiv.org/abs/2610.31010](https://arxiv.org/abs/2610.31010)
 
 ## 🖼️Concept Figure
 ![](assets/method.png)
